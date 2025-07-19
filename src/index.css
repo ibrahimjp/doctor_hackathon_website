@@ -1,0 +1,56 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Inter and Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@400;700;800&display=swap');
+
+html, body {
+    scroll-behavior: smooth;
+    /* Ensure full height for background image */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #01030F; 
+    background-size: cover; /* Center the background image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep background fixed on scroll */
+}
+
+/* Custom utility for text glow effect */
+@layer utilities {
+  .text-glow {
+    text-shadow:
+      0 0 5px rgba(0, 255, 255, 0.5), /* Cyan glow */
+      0 0 10px rgba(0, 255, 255, 0.4),
+      0 0 15px rgba(0, 255, 255, 0.3),
+      0 0 20px rgba(0, 255, 255, 0.2);
+  }
+}
+
+
+*{
+margin :0;
+padding: 0;
+}
+.app{
+ width: 80%;
+ margin: 20px , auto;
+ padding: 20px 0;;
+}
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* Optional: Global background image if desired, otherwise handled by component */
+body {
+    background-color: #000; /* Fallback */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps background fixed on scroll */
+}
